@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/ruship13/Mahindra-Battery.git'
+                    url: 'https://github.com/ruship13/Mahindra_Battery_Latest_Backend.git'
             }
         }
         stage('Build') 
