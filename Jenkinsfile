@@ -40,7 +40,12 @@ pipeline {
    // }
 //}
 
-
+stage('Approval for Production') {
+    steps {
+        input message: 'Deploy to Production?',
+              ok: 'Deploy'
+    }
+}
    stage('Deployment') {
     steps {
         deploy adapters: [
